@@ -24,3 +24,5 @@ c.运行查看
 
 6.karma-mocha-reporter用于使karma日志输出保持mocha原来的风格；
 7.karma-coverage是用来检验测试的代码覆盖率。
+
+8.
