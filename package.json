@@ -9,7 +9,8 @@
   "scripts": {
 	"build": "node script/build.js",
 	"te": "npm run build-pack && karma start script/karma.conf.js",
-	"test": "karma start script/karma.config.js",
+	"test1": "karma start script/karma.config.js",
+	"test": "node script/build.js",
 	"karma": "karma init ./script/karam.config.js"
   },
   "author": "hjai",
