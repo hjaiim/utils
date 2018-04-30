@@ -11,7 +11,7 @@ notifications:
 
 before_install:
   - sudo apt-get install google-chrome-stable
-  install:
+install:
     - npm install
-  script:
+script:
     - npm run test
