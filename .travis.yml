@@ -8,3 +8,10 @@ notifications:
       - hjaiim@163.com
   on_success: change
   on_failure: always
+
+before_install:
+  - sudo apt-get install google-chrome-stable
+  install:
+    - npm install
+  script:
+    - npm run test
