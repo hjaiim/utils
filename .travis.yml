@@ -26,7 +26,7 @@ branches:
 
 deploy:
   provider: npm
-  email: "$NPM_EMAIL"
+  email: "$GH_EMAIL"
   api_key: "$NPM_TOKEN"
   skip_cleanup: true
   on:
