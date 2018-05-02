@@ -9,8 +9,9 @@ notifications:
   on_success: change
   on_failure: always
 
-before_install:
-  - sudo apt-get install google-chrome-stable
+cache:
+  directories:
+    - node_modules
 
 install:
     - npm install
@@ -21,6 +22,7 @@ script:
 branches:
   only:
     - master
+    - production
 
 after_script:
   - cd ./dist
