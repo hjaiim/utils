@@ -31,7 +31,7 @@ env:
    - GH_REF: github.com/hjaiim/utils.git
 
 
-notifications:
+ notifications:
   email:
     recipients:
       - hjaiim@163.com
