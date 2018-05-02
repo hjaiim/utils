@@ -13,7 +13,7 @@ const rootPath = path.resolve(__dirname, '../')
 
 let building = ora('building......');
 building.start();
-rm((path.resolve('dist',`${pkgJson.name}.min.js`)),err =>{
+rm((path.resolve('dist',`${pkgJson.buildName}.min.js`)),err =>{
 	if(err) throw (err)
 	webpack(config,function (err,stats)
 	{

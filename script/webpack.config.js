@@ -11,7 +11,7 @@ const UglifyJsPlugin=require('uglifyjs-webpack-plugin');
 module.exports = {
 	entry: path.resolve(rootPath, 'src', 'main.js'),
 	output: {
-		filename: `${pkgJson.name}.min.js`,
+		filename: `${pkgJson.buildName}.min.js`,
 		path: path.resolve(rootPath, 'dist'),
 		library: `${pkgJson.name}`,
 		libraryTarget: "umd"
