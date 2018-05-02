@@ -23,7 +23,7 @@ branches:
   only:
     - master
     - production
-    
+
 deploy:
   provider: npm
   email: "$NPM_EMAIL"
@@ -32,14 +32,6 @@ deploy:
   on:
     branch: production
 
-after_script:
-  - cd ./dist
-  - git init
-  - git config user.name "${GH_NAME}"
-  - git config user.email "${GH_EMAIL}"
-  - git add .
-  - git commit -m "update utils"
-  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
 
 env:
  global:
