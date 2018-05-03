@@ -21,8 +21,8 @@ deploy:
   email: "$GH_EMAIL"
   api_key: "$NPM_TOKEN"
   skip_cleanup: true
-  on:
-    branch: production
+  #on:
+    #branch: production
 
 env:
   global:
