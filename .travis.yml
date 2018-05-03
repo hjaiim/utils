@@ -15,6 +15,7 @@ script:
 branches:
   only:
     - master
+    - production
 
 deploy:
   provider: npm
@@ -23,7 +24,6 @@ deploy:
   skip_cleanup: true
   on:
     branch: production
-    #branch: master
 
 after_script:
   - cd ./dist
