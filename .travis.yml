@@ -22,14 +22,14 @@ deploy:
   api_key: "$NPM_TOKEN"
   skip_cleanup: true
   on:
-    #branch: production
-    branch: master
+    branch: production
+    #branch: master
 
 after_script:
   - cd ./dist
   - git init
-  - git config user.name "haojun"
-  - git config user.email "hjaiim@163.com"
+  - git config user.name "${GH_NAME}"
+  - git config user.email "${GH_EMAIL}"
   - git add .
   - git commit -m "update utils"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
