@@ -15,7 +15,6 @@ script:
 branches:
   only:
     - master
-    - production
 
 deploy:
   provider: npm
@@ -25,13 +24,11 @@ deploy:
   on:
     branch: production
 
-
 env:
- global:
+  global:
    - GH_REF: github.com/hjaiim/utils.git
 
-
- notifications:
+notifications:
   email:
     recipients:
       - hjaiim@163.com
