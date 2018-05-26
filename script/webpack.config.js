@@ -13,7 +13,7 @@ module.exports = {
 	output: {
 		filename: `${pkgJson.buildName}.min.js`,
 		path: path.resolve(rootPath, 'dist'),
-		library: `${pkgJson.name}`,
+		library: `${pkgJson.buildName}`,
 		libraryTarget: "umd"
 	},
 	module: {
