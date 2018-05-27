@@ -1,3 +1,7 @@
+[![npm](https://img.shields.io/npm/v/hjai-utils.svg)](https://travis-ci.org/hjaiim/utils)
+[![Build Status](https://travis-ci.org/hjaiim/utils.svg?branch=master)](https://travis-ci.org/hjaiim/utils)
+[![Coverage Status](https://coveralls.io/repos/github/hjaiim/utils/badge.svg?branch=master)]
+
 1.npm init
 2.npm install webpack -S
 

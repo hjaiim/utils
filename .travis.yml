@@ -6,16 +6,27 @@ cache:
   directories:
     - node_modules
 
+before_install:
+- sudo apt-get install google-chrome-stable
+
 install:
     - npm install
 
 script:
-    - npm run build
+    - npm run test
+
+after_success:
+- cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
+#- rm -rf ./coverage
 
 branches:
   only:
     - master
     - production
+
+before_deploy:
+  - npm run build
+  - rm -rf ./src ./test ./coverage ./script ./.babelrc
 
 deploy:
   provider: npm
