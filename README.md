@@ -46,3 +46,4 @@ const OS = getOS()
 
 ### Array
 #### &emsp;&emsp;[arrayEqual][arrayEqual]&emsp;&emsp;判断两个数组是否相等
+[arrayEqual]:https://github.com/hjaiim/utils/blob/master/src/array/arrayEqual.js
