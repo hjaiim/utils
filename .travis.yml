@@ -13,6 +13,7 @@ install:
     - npm install
 
 script:
+    - npm run karma
     - npm run test
 
 after_success:
