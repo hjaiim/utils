@@ -2,6 +2,7 @@
 *.log
 *.zip
 .DS_Store
+.text
 
 # folders
 node_modules/*

@@ -7,17 +7,16 @@ cache:
     - node_modules
 
 before_install:
-- sudo apt-get install google-chrome-stable
+#- sudo apt-get install google-chrome-stable
 
 install:
     - npm install
 
 script:
-    - npm run karma
-    - npm run test
+    #- npm run test
 
 after_success:
-- cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
+#- cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
 #- rm -rf ./coverage
 
 branches:
@@ -27,6 +26,7 @@ branches:
 
 before_deploy:
   - npm run build
+  - npm run build-copy
   - rm -rf ./src ./test ./coverage ./script ./.babelrc
 
 deploy:

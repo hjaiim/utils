@@ -4,31 +4,23 @@
  */
 const ora = require('ora')
 const rm = require('rimraf')
-const mkdir = require('mk-dir')
 const copy = require('copy')
 const path = require('path')
 const fs = require('fs')
 const chalk = require('chalk')
 const rootPath = path.resolve(__dirname, '../')
 const pkgJson = require('../package.json')
-const dirToNpm = path.resolve(rootPath,'./'+`${pkgJson.buildName}`)
 
 let copying = ora('copying-----------');
 copying.start();
 
-rm(dirToNpm, (err)=>
+rm('*.js', (err)=>
 {
 	if (err) throw (err)
-	mkdir(dirToNpm);
-	copy(rootPath+'/dist/*.min.js',dirToNpm,function (err,files)
-	{
-//		console.log(files)
-	});
-
 	let folderList = fs.readdirSync(path.resolve(rootPath, 'src'));
 	folderList.forEach((item, index)=>
 	{
-		copy(`src/${item}/*.js`, dirToNpm, function (err,files)
+		copy(`src/${item}/*.js`, rootPath, function (err,files)
 		{
 			if (err) throw (err)
 			if (index === folderList.length - 1) {

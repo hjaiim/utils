@@ -35,8 +35,5 @@
 		"rimraf": "^2.6.2",
 		"uglifyjs-webpack-plugin": "^1.2.5",
 		"webpack": "^4.6.0"
-	},
-	"dependencies": {
-		"mk-dir": "^1.0.1"
 	}
 }
