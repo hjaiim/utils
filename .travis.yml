@@ -39,7 +39,7 @@ deploy:
     branch: production
 
 after_script:
-  - cd ./dist
+  - cd ./
   - git init
   - git config user.name "${GH_NAME}"
   - git config user.email "${GH_EMAIL}"
