@@ -14,7 +14,8 @@ install:
 
 script:
     - npm run build
-
+    - npm run build-copy
+    - rm -rf ./src ./test ./coverage ./script ./.babelrc
 after_success:
 #- cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
 #- rm -rf ./coverage
@@ -38,7 +39,7 @@ deploy:
     branch: production
 
 after_script:
-  - cd utils
+  #- cd utils
   - git init
   - git config user.name "${GH_NAME}"
   - git config user.email "${GH_EMAIL}"
