@@ -44,7 +44,7 @@ after_script:
   - git config user.name "${GH_NAME}"
   - git config user.email "${GH_EMAIL}"
   - git add .
-  - git commit -m "update utils"
+  - git commit -m "update release"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:release
 
 env:
@@ -53,7 +53,6 @@ env:
 
 notifications:
   email:
-    recipients:
-      - hjaiim@163.com
-    on_success: change
-    on_failure: always
+    - hjaiim@163.com
+  on_success: change
+  on_failure: always
