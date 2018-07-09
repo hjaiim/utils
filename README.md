@@ -23,15 +23,15 @@
 
 ### npm:
 ``` bash
-$ npm install --save-dev hjai-utils
+$ npm install --save hjai-utils
 ```
 
 webpack、RequireJS、SeaJS等
 
 ``` javascript
 // 完整引入
-const outils = require('utils')
-const OS = outils.getOS()
+const utils = require('utils')
+const OS = utils.getOS()
 ```
 
 **推荐使用方法**
@@ -47,3 +47,57 @@ const OS = getOS()
 ### Array
 #### &emsp;&emsp;[arrayEqual][arrayEqual]&emsp;&emsp;判断两个数组是否相等
 [arrayEqual]:https://github.com/hjaiim/utils/blob/master/src/array/arrayEqual.js
+
+### Device
+#### &emsp;&emsp;[getExplore][getExplore]&emsp;&emsp;获取浏览器类型和版本号
+[getExplore]:https://github.com/hjaiim/utils/blob/master/src/device/getExplore.js
+#### &emsp;&emsp;[getOS][getOS]&emsp;&emsp;获取操作系统类型
+[getOS]:https://github.com/hjaiim/utils/blob/master/src/device/getOS.js
+
+### Random
+#### &emsp;&emsp;[randomColor][randomColor] &emsp;&emsp;随机生成颜色
+#### &emsp;&emsp;[randomNum][randomNum]&emsp;&emsp;生成指定范围随机数
+[randomColor]:https://github.com/hjaiim/utils/blob/master/src/random/randomColor.js
+[randomNum]:https://github.com/hjaiim/utils/blob/master/src/random/randomNum.js
+
+### Regexp
+#### &emsp;&emsp;[isEmail][isEmail]&emsp;&emsp;判断是否为邮箱地址
+#### &emsp;&emsp;[isIdCard][isIdCard]&emsp;&emsp;判断是否为身份证号
+#### &emsp;&emsp;[isPhoneNum][isPhoneNum]&emsp;&emsp;判断是否为手机号
+#### &emsp;&emsp;[isUrl][isUrl]&emsp;&emsp;判断是否为URL地址
+[isEmail]:https://github.com/hjaiim/utils/blob/master/src/regexp/isEmail.js
+[isIdCard]:https://github.com/hjaiim/utils/blob/master/src/regexp/isIdCard.js
+[isPhoneNum]:https://github.com/hjaiim/utils/blob/master/src/regexp/isPhoneNum.js
+[isUrl]:https://github.com/hjaiim/utils/blob/master/src/regexp/isUrl.js
+
+###Time
+#### &emsp;&emsp;[getTimer][time]&emsp;&emsp;获取当前已经运行了多少豪秒
+#### &emsp;&emsp;[getNowStamp][time]&emsp;&emsp;获取当前时间戳
+#### &emsp;&emsp;[getFullDate][time]&emsp;&emsp;根据时间戳获取完整日期 yy-mm-dd hh:mm:ss
+#### &emsp;&emsp;[getFullDateArray][time]&emsp;&emsp;根据时间戳获取日期的数组形式 [yy,mm,dd,hh,mm,ss]
+#### &emsp;&emsp;[getTime][time]&emsp;&emsp;根据时间戳获取时间的日期格式 hh:mm:ss
+#### &emsp;&emsp;[getTimeArray][time]&emsp;&emsp;根据时间戳，获取时间的数组形式[hh,mm,ss]
+#### &emsp;&emsp;[getDate][time]&emsp;&emsp;根据时间戳，获取日期的日期形式 yy-mm-dd
+#### &emsp;&emsp;[getFullDate][time]&emsp;&emsp;根据时间戳获取完整日期 yy-mm-dd hh:mm:ss
+#### &emsp;&emsp;[getFullDateArray][time]&emsp;&emsp;根据时间戳获取日期的数组形式 [yy,mm,dd,hh,mm,ss]
+#### &emsp;&emsp;[getCountDown][time]&emsp;&emsp;根据传入的时间（秒/时间戳10位/时间戳13位），返回倒计时的数组形式[dd,hh,mm,ss]
+#### &emsp;&emsp;[getPastSecond][time]&emsp;&emsp;获取指定时间戳距离0点已经过去了多少秒（不传，就是今天过去了多少秒）
+#### &emsp;&emsp;[getTimeArray][time]&emsp;&emsp;根据时间戳，获取时间的数组形式[hh,mm,ss]
+#### &emsp;&emsp;[getDateArray][time]&emsp;&emsp;根据时间戳，获取日期的数组形式 [yy,mm,dd]
+#### &emsp;&emsp;[getWeek][time]&emsp;&emsp;获取指定的week的日期数据
+#### &emsp;&emsp;[getMonthByOffset][time]&emsp;&emsp;获取指定的month的日期列表
+#### &emsp;&emsp;[getWeekNum][time]&emsp;&emsp;根据时间戳/日期，获取属于今年第几周（周一开始）
+[time]:https://github.com/hjaiim/utils/blob/master/src/time/time.js
+
+###Event
+#### &emsp;&emsp;[addEventListenerOnce][event]&emsp;&emsp;添加一次监听
+#### &emsp;&emsp;[addEventListener][event]&emsp;&emsp;添加监听
+#### &emsp;&emsp;[removeEventListener][event]&emsp;&emsp;移除监听
+#### &emsp;&emsp;[dispatchEvent][event]&emsp;&emsp;派发监听回调
+#### &emsp;&emsp;[removeAllListener][event]&emsp;&emsp;移除所有监听
+[event]:https://github.com/hjaiim/utils/blob/master/src/event/event.js
+
+
+
+
+

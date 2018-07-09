@@ -22,7 +22,7 @@ after_success:
 
 branches:
   only:
-    - master
+    #- master
     - production
 
 before_deploy:
@@ -39,15 +39,13 @@ deploy:
     branch: production
 
 after_script:
-  - cd ./
-  - git init
-  - git config user.name "${GH_NAME}"
-  - git config user.email "${GH_EMAIL}"
-  - git checkout -b release
-  - git add .
-  - git commit -m "update release"
+  #- cd ./
+  #- git init
+  #- git config user.name "${GH_NAME}"
+  #- git config user.email "${GH_EMAIL}"
+  #- git add .
+  #- git commit -m "update release"
   #- git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:release
-  - git push -f origin release
 
 env:
   global:
