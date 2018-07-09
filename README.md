@@ -30,17 +30,23 @@ webpack、RequireJS、SeaJS等
 
 ``` javascript
 // 完整引入
-const utils = require('utils')
-const OS = utils.getOS()
+const utils = require('hjai-utils/dist/utils.min.js');
+const OS = utils.getOS();
+
+import * as utils from 'hjai-utils/dist/utils.min.js';
+utils.getOS();
 ```
 
 **推荐使用方法**
 
 也可以不需要完整引入所有函数，所以只引入需要使用的方法即可。
 ``` javascript
-// 只引入部分方法('utils/<方法名>')
-const getOS = require('utils/getOS')
-const OS = getOS()
+// 只引入部分方法('hjai-utils/<方法名>')
+const getOS = require('hjai-utils/getOS');
+const OS = getOS();
+
+import * as utils from 'hjai-utils/getOS';
+utils.getOS();
 ```
 ## API文档
 
