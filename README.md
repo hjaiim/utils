@@ -70,7 +70,7 @@ const OS = getOS()
 [isPhoneNum]:https://github.com/hjaiim/utils/blob/master/src/regexp/isPhoneNum.js
 [isUrl]:https://github.com/hjaiim/utils/blob/master/src/regexp/isUrl.js
 
-###Time
+### Time
 #### &emsp;&emsp;[getTimer][time]&emsp;&emsp;获取当前已经运行了多少豪秒
 #### &emsp;&emsp;[getNowStamp][time]&emsp;&emsp;获取当前时间戳
 #### &emsp;&emsp;[getFullDate][time]&emsp;&emsp;根据时间戳获取完整日期 yy-mm-dd hh:mm:ss
@@ -89,7 +89,7 @@ const OS = getOS()
 #### &emsp;&emsp;[getWeekNum][time]&emsp;&emsp;根据时间戳/日期，获取属于今年第几周（周一开始）
 [time]:https://github.com/hjaiim/utils/blob/master/src/time/time.js
 
-###Event
+### Event
 #### &emsp;&emsp;[addEventListenerOnce][event]&emsp;&emsp;添加一次监听
 #### &emsp;&emsp;[addEventListener][event]&emsp;&emsp;添加监听
 #### &emsp;&emsp;[removeEventListener][event]&emsp;&emsp;移除监听
