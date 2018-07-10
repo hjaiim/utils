@@ -15,10 +15,10 @@ install:
 
 script:
     # 默认执行npm run test
-    - npm run build
+    #- npm run build
 
 after_success:
-   #- cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
+   - cat ./coverage/lcov.info | node_modules/.bin/coveralls --verbose
    #- rm -rf ./coverage
 
 branches:

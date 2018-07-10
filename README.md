@@ -1,6 +1,7 @@
-[![npm](https://img.shields.io/npm/v/hjai-utils.svg)](https://travis-ci.org/hjaiim/utils)
+[![npm](https://img.shields.io/npm/v/hjai-utils.svg)](https://www.npmjs.com/package/hjai-utils)
 [![Build Status](https://travis-ci.org/hjaiim/utils.svg?branch=master)](https://travis-ci.org/hjaiim/utils)
 [![Coverage Status](https://coveralls.io/repos/github/hjaiim/utils/badge.svg?branch=master)]
+![LICENSE MIT](https://img.shields.io/npm/l/hjai-utils.svg)](https://www.npmjs.com/package/hjai-utils)
 
 
 前端业务代码工具库
