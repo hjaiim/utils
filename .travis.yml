@@ -7,7 +7,7 @@ cache:
     - node_modules
 
 before_install:
-#- sudo apt-get install google-chrome-stable
+    - sudo apt-get install google-chrome-stable
 
 install:
     #默认执行npm install
