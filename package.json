@@ -1,6 +1,6 @@
 {
 	"name": "hjai-utils",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "js工具库",
 	"buildName": "utils",
 	"main": "index.js",
