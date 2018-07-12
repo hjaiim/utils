@@ -17,6 +17,7 @@ describe('Event API:', function ()
 		{
 			utils.event.dispatchEvent('test1', '我是派发参数1');
 		});
+
 		it(`utils.event.addEventListenerOnce should not return 我是派发参数2`, function ()
 		{
 			utils.event.dispatchEvent('test1', '我是派发参数2');
@@ -33,10 +34,12 @@ describe('Event API:', function ()
 				console.log(str);
 			})
 		})
+
 		it(`utils.event.addEventListenerOnce should return 我是派发参数1`, function ()
 		{
 			utils.event.dispatchEvent('test2', '我是派发参数1');
 		});
+
 		it(`utils.event.addEventListenerOnce should return 我是派发参数2`, function ()
 		{
 			utils.event.dispatchEvent('test2', '我是派发参数2');
