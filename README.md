@@ -104,8 +104,7 @@ utils.getOS();
 #### &emsp;&emsp;[removeAllListener][event]&emsp;&emsp;移除所有监听
 [event]:https://github.com/hjaiim/utils/blob/master/src/event/event.js
 
-### Data
-#####   (默认为localStorage存储,传'ses'则为sessionStorage存储)
+### Data    (默认为localStorage存储,传'ses'则为sessionStorage存储)
 #### &emsp;&emsp;[setData][data]&emsp;&emsp;存储数据到localStorage
 #### &emsp;&emsp;[getData][data]&emsp;&emsp;从localStorage取数据
 #### &emsp;&emsp;[delData][data]&emsp;&emsp;清除localStorage指定的键值对应的数据
