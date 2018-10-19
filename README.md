@@ -111,3 +111,6 @@ utils.getOS();
 #### &emsp;&emsp;[delAllData][data]&emsp;&emsp;清空localStorage全部数据
 [data]:https://github.com/hjaiim/utils/blob/master/src/data/data.js
 
+### Merge
+#### &emsp;&emsp;[merge][merge]&emsp;&emsp;合并对象
+[merge]:https://github.com/hjaiim/utils/blob/master/src/merge/merge.js
